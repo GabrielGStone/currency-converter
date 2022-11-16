@@ -1,6 +1,10 @@
 import axios from "axios";
 
 const useRequest = () => {
+  // const headers = {
+  //   Authorization: `Bearer 95ICOhWOsKiiIHU3cZB4usvt39qZJIew`,
+  // };
+
   const get = async (endpoint: string) => {
     let res: any;
 
