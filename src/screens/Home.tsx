@@ -9,13 +9,8 @@ const Home = () => {
   const { get } = useRequest();
 
   const getCurrency = async () => {
-    const headers = {
-      Authorization: `Bearer 95ICOhWOsKiiIHU3cZB4usvt39qZJIew`,
-    };
-
     const res = await get(
-      "https://v6.exchangerate-api.com/v6/95ICOhWOsKiiIHU3cZB4usvt39qZJIew/latest/EUR",
-      { headers }
+      "https://v6.exchangerate-api.com/v6/95ICOhWOsKiiIHU3cZB4usvt39qZJIew/latest/EUR"
     );
     console.log(res);
     return res;
